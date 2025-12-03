@@ -1,5 +1,32 @@
-ssh
-ssh.pub
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Python cache & compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs
+*.log
+simulation.log
+
+# Unit test & coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# OS / editor files
+.DS_Store
+*.swp
+*.swo
+
+# Jupyter / notebooks
+.ipynb_checkpoints/
+
+# Data / secrets
 *.pem
-*.key
+*.json
 

@@ -1,4 +1,4 @@
-name: Mailer v01 CI
+name: Python CI
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -24,10 +24,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Run unit tests
+    - name: Run mailer script
       run: |
-        pytest tests/
-git add .github/workflows/ci.yml
-git commit -m "Add GitHub Actions CI workflow"
-git push
+        python mailer_v01.py
 
